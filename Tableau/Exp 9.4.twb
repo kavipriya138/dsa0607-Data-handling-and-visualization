@@ -1,0 +1,1036 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='exp 9' inline='true' name='federated.0d2f0ml1900nwn149bp5s0p85nmu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='exp 9' name='textscan.1xazy4m11kw9j016brx5c0qlbdk3'>
+            <connection class='textscan' directory='C:/Users/KAVIPRIYA N/Downloads' filename='exp 9.txt' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='string' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[Q1]' />
+            <value name='[Q2]' />
+            <value name='[Q3]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[exp 9.txt].[Q1]' />
+              <field name='[exp 9.txt].[Q2]' />
+              <field name='[exp 9.txt].[Q3]' />
+            </group>
+          </groups>
+          <relation connection='textscan.1xazy4m11kw9j016brx5c0qlbdk3' name='exp 9.txt' table='[exp 9#txt]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='SurveyID' ordinal='0' />
+              <column datatype='string' name='Q1' ordinal='1' />
+              <column datatype='string' name='Q2' ordinal='2' />
+              <column datatype='string' name='Q3' ordinal='3' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[exp 9.txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SurveyID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SurveyID]</local-name>
+            <parent-name>[exp 9.txt]</parent-name>
+            <remote-alias>SurveyID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[exp 9.txt_C32CE09992004A0FB2B0BB72B1A89813]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[exp 9.txt_C32CE09992004A0FB2B0BB72B1A89813]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[exp 9.txt_C32CE09992004A0FB2B0BB72B1A89813]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Questions' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='Answer' datatype='string' name='[Pivot Field Values]' role='dimension' type='nominal' />
+      <column caption='Survey ID' datatype='integer' name='[SurveyID]' role='dimension' type='ordinal' />
+      <column caption='exp 9.txt' datatype='table' name='[__tableau_internal_object_id__].[exp 9.txt_C32CE09992004A0FB2B0BB72B1A89813]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='exp 9.txt' id='exp 9.txt_C32CE09992004A0FB2B0BB72B1A89813'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='string' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[Q1]' />
+                  <value name='[Q2]' />
+                  <value name='[Q3]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[exp 9.txt].[Q1]' />
+                    <field name='[exp 9.txt].[Q2]' />
+                    <field name='[exp 9.txt].[Q3]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.1xazy4m11kw9j016brx5c0qlbdk3' name='exp 9.txt' table='[exp 9#txt]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                    <column datatype='integer' name='SurveyID' ordinal='0' />
+                    <column datatype='string' name='Q1' ordinal='1' />
+                    <column datatype='string' name='Q2' ordinal='2' />
+                    <column datatype='string' name='Q3' ordinal='3' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='exp 9 (2)' inline='true' name='federated.0uy0cns06t091h1ddv2d91ol3391' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='exp 9' name='textscan.1jj0nli0ix8gro1er5vbc0de8opd'>
+            <connection class='textscan' directory='C:/Users/KAVIPRIYA N/Downloads' filename='exp 9.txt' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1jj0nli0ix8gro1er5vbc0de8opd' name='exp 9.txt' table='[exp 9#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='SurveyID' ordinal='0' />
+            <column datatype='string' name='Q1' ordinal='1' />
+            <column datatype='string' name='Q2' ordinal='2' />
+            <column datatype='string' name='Q3' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[exp 9.txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SurveyID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SurveyID]</local-name>
+            <parent-name>[exp 9.txt]</parent-name>
+            <remote-alias>SurveyID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[exp 9.txt_C2BA32A0D98A489A951B72C3DD3232A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Q1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Q1]</local-name>
+            <parent-name>[exp 9.txt]</parent-name>
+            <remote-alias>Q1</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[exp 9.txt_C2BA32A0D98A489A951B72C3DD3232A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Q2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Q2]</local-name>
+            <parent-name>[exp 9.txt]</parent-name>
+            <remote-alias>Q2</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[exp 9.txt_C2BA32A0D98A489A951B72C3DD3232A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Q3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Q3]</local-name>
+            <parent-name>[exp 9.txt]</parent-name>
+            <remote-alias>Q3</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[exp 9.txt_C2BA32A0D98A489A951B72C3DD3232A5]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Survey ID' datatype='integer' name='[SurveyID]' role='dimension' type='ordinal' />
+      <column caption='exp 9.txt' datatype='table' name='[__tableau_internal_object_id__].[exp 9.txt_C2BA32A0D98A489A951B72C3DD3232A5]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='exp 9.txt' id='exp 9.txt_C2BA32A0D98A489A951B72C3DD3232A5'>
+            <properties context=''>
+              <relation connection='textscan.1jj0nli0ix8gro1er5vbc0de8opd' name='exp 9.txt' table='[exp 9#txt]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='SurveyID' ordinal='0' />
+                  <column datatype='string' name='Q1' ordinal='1' />
+                  <column datatype='string' name='Q2' ordinal='2' />
+                  <column datatype='string' name='Q3' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='exp 9 (3)' inline='true' name='federated.1v7sk8m0eg1rxe18friql0ezhubp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='exp 9' name='textscan.0qjn40504jw0t915dqhsd10uf5m4'>
+            <connection class='textscan' directory='C:/Users/KAVIPRIYA N/Downloads' filename='exp 9.txt' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0qjn40504jw0t915dqhsd10uf5m4' name='exp 9.txt' table='[exp 9#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='SurveyID' ordinal='0' />
+            <column datatype='string' name='Q1' ordinal='1' />
+            <column datatype='string' name='Q2' ordinal='2' />
+            <column datatype='string' name='Q3' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[exp 9.txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SurveyID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SurveyID]</local-name>
+            <parent-name>[exp 9.txt]</parent-name>
+            <remote-alias>SurveyID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[exp 9.txt_A112E7424C5C4159B6821CFE3789A134]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Q1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Q1]</local-name>
+            <parent-name>[exp 9.txt]</parent-name>
+            <remote-alias>Q1</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[exp 9.txt_A112E7424C5C4159B6821CFE3789A134]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Q2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Q2]</local-name>
+            <parent-name>[exp 9.txt]</parent-name>
+            <remote-alias>Q2</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[exp 9.txt_A112E7424C5C4159B6821CFE3789A134]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Q3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Q3]</local-name>
+            <parent-name>[exp 9.txt]</parent-name>
+            <remote-alias>Q3</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[exp 9.txt_A112E7424C5C4159B6821CFE3789A134]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Survey ID' datatype='integer' name='[SurveyID]' role='dimension' type='ordinal' />
+      <column caption='exp 9.txt' datatype='table' name='[__tableau_internal_object_id__].[exp 9.txt_A112E7424C5C4159B6821CFE3789A134]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='exp 9.txt' id='exp 9.txt_A112E7424C5C4159B6821CFE3789A134'>
+            <properties context=''>
+              <relation connection='textscan.0qjn40504jw0t915dqhsd10uf5m4' name='exp 9.txt' table='[exp 9#txt]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='SurveyID' ordinal='0' />
+                  <column datatype='string' name='Q1' ordinal='1' />
+                  <column datatype='string' name='Q2' ordinal='2' />
+                  <column datatype='string' name='Q3' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Grouped Bar Chart'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='exp 9 (2)' name='federated.0uy0cns06t091h1ddv2d91ol3391' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0uy0cns06t091h1ddv2d91ol3391'>
+            <column datatype='string' name='[Q1]' role='dimension' type='nominal' />
+            <column caption='Survey ID' datatype='integer' name='[SurveyID]' role='dimension' type='ordinal' />
+            <column-instance column='[SurveyID]' derivation='Count' name='[cnt:SurveyID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Q1]' derivation='None' name='[none:Q1:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0uy0cns06t091h1ddv2d91ol3391].[none:Q1:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0uy0cns06t091h1ddv2d91ol3391].[cnt:SurveyID:qk]</rows>
+        <cols>[federated.0uy0cns06t091h1ddv2d91ol3391].[none:Q1:nk]</cols>
+      </table>
+      <simple-id uuid='{8B5AE01D-15A9-45F3-A77F-3F5CC44554D4}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Table</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='exp 9 (3)' name='federated.1v7sk8m0eg1rxe18friql0ezhubp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1v7sk8m0eg1rxe18friql0ezhubp'>
+            <column datatype='string' name='[Q1]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Q2]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Q3]' role='dimension' type='nominal' />
+            <column caption='Survey ID' datatype='integer' name='[SurveyID]' role='dimension' type='ordinal' />
+            <column-instance column='[__tableau_internal_object_id__].[exp 9.txt_A112E7424C5C4159B6821CFE3789A134]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:exp 9.txt_A112E7424C5C4159B6821CFE3789A134:qk]' pivot='key' type='quantitative' />
+            <column caption='exp 9.txt' datatype='table' name='[__tableau_internal_object_id__].[exp 9.txt_A112E7424C5C4159B6821CFE3789A134]' role='measure' type='quantitative' />
+            <column-instance column='[Q1]' derivation='None' name='[none:Q1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Q2]' derivation='None' name='[none:Q2:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Q3]' derivation='None' name='[none:Q3:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SurveyID]' derivation='None' name='[none:SurveyID:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1v7sk8m0eg1rxe18friql0ezhubp].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.1v7sk8m0eg1rxe18friql0ezhubp].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1v7sk8m0eg1rxe18friql0ezhubp].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1v7sk8m0eg1rxe18friql0ezhubp].[none:SurveyID:ok] / ([federated.1v7sk8m0eg1rxe18friql0ezhubp].[none:Q1:nk] / ([federated.1v7sk8m0eg1rxe18friql0ezhubp].[none:Q2:nk] / [federated.1v7sk8m0eg1rxe18friql0ezhubp].[none:Q3:nk])))</rows>
+        <cols>[federated.1v7sk8m0eg1rxe18friql0ezhubp].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{B0886744-9512-4B3D-BCC5-A83FCF86170D}' />
+    </worksheet>
+    <worksheet name='Stack Bar Chart'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='exp 9' name='federated.0d2f0ml1900nwn149bp5s0p85nmu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0d2f0ml1900nwn149bp5s0p85nmu'>
+            <column caption='9' datatype='integer' name='[Calculation_1017076236238849]' role='measure' type='quantitative' user:unnamed='Sheet 3'>
+              <calculation class='tableau' formula='9' />
+            </column>
+            <column caption='Questions' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Answer' datatype='string' name='[Pivot Field Values]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1017076236238849]' derivation='Count' name='[cnt:Calculation_1017076236238849:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='None' name='[none:Pivot Field Values:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0d2f0ml1900nwn149bp5s0p85nmu].[none:Pivot Field Values:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0d2f0ml1900nwn149bp5s0p85nmu].[cnt:Calculation_1017076236238849:qk]</rows>
+        <cols>[federated.0d2f0ml1900nwn149bp5s0p85nmu].[none:Pivot Field Names:nk]</cols>
+      </table>
+      <simple-id uuid='{1C782B79-F8C2-4A98-8006-BCB8428BB921}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='59400' x='800' y='1000'>
+              <zone h='98000' id='11' name='Grouped Bar Chart' w='29700' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='98000' id='9' name='Stack Bar Chart' w='29700' x='30500' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone h='98000' id='6' param='vert' type-v2='layout-flow' w='39000' x='60200' y='1000'>
+              <zone h='14250' id='10' name='Stack Bar Chart' pane-specification-id='0' param='[federated.0d2f0ml1900nwn149bp5s0p85nmu].[none:Pivot Field Values:nk]' type-v2='color' w='39000' x='60200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11625' id='12' name='Grouped Bar Chart' pane-specification-id='0' param='[federated.0uy0cns06t091h1ddv2d91ol3391].[none:Q1:nk]' type-v2='color' w='39000' x='60200' y='15250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='20250' id='13' name='Sheet 3' w='39000' x='60200' y='26875'>
+                <layout-cache fixed-size-h='154' fixed-size-w='382' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='900' minheight='900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='15' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='14' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='11' is-fixed='true' name='Grouped Bar Chart' w='29700' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11625' id='12' name='Grouped Bar Chart' pane-specification-id='0' param='[federated.0uy0cns06t091h1ddv2d91ol3391].[none:Q1:nk]' type-v2='color' w='39000' x='60200' y='15250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='9' is-fixed='true' name='Stack Bar Chart' w='29700' x='30500' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='14250' id='10' name='Stack Bar Chart' pane-specification-id='0' param='[federated.0d2f0ml1900nwn149bp5s0p85nmu].[none:Pivot Field Values:nk]' type-v2='color' w='39000' x='60200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='154' h='20250' id='13' is-fixed='true' name='Sheet 3' w='39000' x='60200' y='26875'>
+                  <layout-cache fixed-size-w='382' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{470E2FA6-0D1C-4A75-95D9-7982D84C9CAF}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='89'>
+    <window class='worksheet' name='Grouped Bar Chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0uy0cns06t091h1ddv2d91ol3391].[none:Q1:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0d2f0ml1900nwn149bp5s0p85nmu].[none:Q1:nk]</field>
+            <field>[federated.0uy0cns06t091h1ddv2d91ol3391].[none:Q1:nk]</field>
+            <field>[federated.0uy0cns06t091h1ddv2d91ol3391].[none:SurveyID:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5615D68D-AAA8-4618-91B0-44E8A714512E}' />
+    </window>
+    <window class='worksheet' name='Stack Bar Chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0d2f0ml1900nwn149bp5s0p85nmu].[none:Pivot Field Values:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0d2f0ml1900nwn149bp5s0p85nmu].[none:Pivot Field Names:nk]</field>
+            <field>[federated.0d2f0ml1900nwn149bp5s0p85nmu].[none:Pivot Field Values:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9EABFF8F-09BE-4689-AB45-E3A29B0A517F}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Grouped Bar Chart'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.0uy0cns06t091h1ddv2d91ol3391].[none:Q1:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Sheet 3' />
+        <viewpoint name='Stack Bar Chart'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.0d2f0ml1900nwn149bp5s0p85nmu].[none:Pivot Field Values:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <device-preview visible='true' />
+      <simple-id uuid='{28F07B3D-254F-4866-AB56-4EC88595C092}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0d2f0ml1900nwn149bp5s0p85nmu].[none:SurveyID:ok]</field>
+            <field>[federated.1v7sk8m0eg1rxe18friql0ezhubp].[:Measure Names]</field>
+            <field>[federated.1v7sk8m0eg1rxe18friql0ezhubp].[none:Q1:nk]</field>
+            <field>[federated.1v7sk8m0eg1rxe18friql0ezhubp].[none:Q2:nk]</field>
+            <field>[federated.1v7sk8m0eg1rxe18friql0ezhubp].[none:Q3:nk]</field>
+            <field>[federated.1v7sk8m0eg1rxe18friql0ezhubp].[none:SurveyID:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{58365CB2-1E70-4E26-BC77-3B8FA27EB174}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      ljo2anup9P8BM0/wacci1KUAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Grouped Bar Chart' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAFkElEQVR4nO3cbWhVBRzH8d+5e7ptzmrOOZfT1OZDaT6LGkohvVAKA0vECIQgITLoTYFv
+      IqTId0H0QgiKMhBkoGGRLxJqtp5mkQ7T5TRNtznU3enV3bu73dOLJFN6Va1zdn7fz8vDvZc/
+      3PM9T/ecG4RhGAowFARBkIp6CCBKBABrBABrBABrBABrBABrBABrBABrBABrpVEPgP/O4NVu
+      nTjWqcsDQyqrrtf0GVM1obriL68o6krPGXVnytU46x5VRjZpfBBAQhR6j2j3rt1qab+ksbVV
+      yvblNK5puTZveVoz7pTymfP64asWHfyiVZmKVXph+wZNiXroGCCAJChm1LZ3l/YdHaPntr6k
+      2XWVyp7/Xh++9ZHe/3iu3niyTl82f6A93/Xp7uIFXagqqBj1zDHBOUAChD3t+uTrs1q8cbNW
+      L5ilyZMm6/4lj2vLU7N17uB+KUhr2qoN2vbqNj2xoDbqcWOFABIg03VW3ZkGLVhYo9LgxsJU
+      uRoXL1JD4biUrtH0pibd21Cj9J8vgEQACVKiktu/zVSgkkhmGT0IIAHSd1SqtKxPvReHb1le
+      7M8oo6qIphodCCAB0pOnanZNVodaOnUzgbyOHvpG/TXLIpws/rgKlADBmAe0YeNKvfzODr2e
+      fl7r5lfrwrf7tHN/v9ZtX6/h3BV1d3Upc31Ip3uzGsj26GR7u65V1qqpsU4VZb7bwYBHIpMi
+      pxMHdum9A0d0rRAqHOjVqZJFevO1rWoKO7W3eY/aTmdvfcu0R/TKM4+qbmzF339kwgVBEBBA
+      koShhgt55QpFhf2/qHnn2zo2bo12vLg+6sliiQASLdT1rp/V0Tuk+fMfjHqYWBp1AYyiUTEK
+      pFKpYFSdBBcKBRWLN3/ELxaLRIF/ZVTtAW6Xz+dVVlamVMr3Kgb+Of4XCPYIANZidQ4QhqGG
+      B3MayA+qGAYqKU+rMl2uFPdvYYTEKoBsT4faj3Xo165LGiikNGZ8g+YuXq6ZE6vYVWFExCqA
+      S+dPa7h2jtauaFR1+bD6Tn2u5k+PauKzy3RX1MMhkWIVQP2chzUlndYfRzylqpk8Sen+buUi
+      ngvJFasji/SNlT8MQ4VDGf24v0WppfPEM0wYKbHaA0ihikN5Xf7tuFoPtWlg2hpteqg+XpUi
+      UWIVQHEopzNHWnW486omLX1MC++bwMqPERWrALJnD6v15KAWrlytGfXVKuHyJ0ZYjDawOXW2
+      /aSaeas0cyIrP/4fMdoDXNSZUxkdP/euOj67uXTs+CVau2mFJkQ3GBKMm+Fgi5vhYI8AYI0A
+      YI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0A
+      YI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0A
+      YI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0A
+      YI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0A
+      YI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0A
+      YI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0A
+      YI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0A
+      YI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0A
+      YI0AYI0AYI0AYI0AYI0AYI0AYI0AYO130CsziQcpA6YAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='107' name='Sheet 3' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Stack Bar Chart' width='192'>
+      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
+      /S+QSW32AMA9cAAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
